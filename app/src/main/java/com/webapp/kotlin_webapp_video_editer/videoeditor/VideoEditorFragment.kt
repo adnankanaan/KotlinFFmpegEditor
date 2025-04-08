@@ -178,7 +178,7 @@ class VideoEditorFragment : Fragment() ,View.OnClickListener , SeekBar.OnSeekBar
         drawingCanvas.apply {
             visibility = View.GONE
         }
-        videoPreview.setVideoPath(videoPath?.toString())
+        videoPreview.setVideoURI(videoPath)
         downloadOptions.visibility = View.GONE
         binding.editVideoFab.apply {
             visibility = View.INVISIBLE
