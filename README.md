@@ -22,19 +22,15 @@ dependencyResolutionManagement {
     }
 }
 
+
 Then add this to your module's build.gradle:
 
-groovy
-Copy
-Edit
 dependencies {
-    implementation 'com.github.YOUR_USERNAME:YOUR_REPO_NAME:VERSION_TAG'
+    implementation 'com.github.adnankanaan:KotlinFFmpegEditor:1.0.0'
 }
-
 
 ## Usage
 
-```kotlin
 val intent = Intent(context, VideoEditorActivity::class.java)
 intent.putExtra("videoUri", videoUri)
 startActivity(intent)
