@@ -43,5 +43,6 @@ VideoEditorFragment.textFinalColorSet = "#FF0000"
 VideoEditorFragment.currentLang = "ar"
 
 ## Notes
-* the editor button visible only when input video less than 5 minutes > only shorts video
+* the editor button visible only when input video less than 5 minutes > only shorts video.
+* This is first trial and colud need more improvments .
 
