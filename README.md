@@ -1,6 +1,12 @@
-# Kotlin Video Editor Library 🎬
+# Kotlin Short Video Editor Library 🎬
 
 A simple and clean Android library to edit videos using FFmpeg.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/582dfd25-e02c-4656-8ffa-cd6f74e93386" width="200"/>
+  <img src="https://github.com/user-attachments/assets/a0653214-9115-4db6-ae71-e0cd8b26ea28" width="200"/>
+  <img src="https://github.com/user-attachments/assets/571e6e15-dde7-4a61-986c-290eb61d736c" width="200"/>
+</p>
 
 ## Features
 - Free draw on videos
@@ -41,4 +47,8 @@ startActivity(intent)
 VideoEditorFragment.textFinalSet = "Hello!"
 VideoEditorFragment.textFinalColorSet = "#FF0000"
 VideoEditorFragment.currentLang = "ar"
+
+## Notes
+* the editor button visible only when input video less than 5 minutes > only shorts video.
+* This is first trial and colud need more improvments .
 
