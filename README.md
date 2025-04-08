@@ -6,6 +6,7 @@ A simple and clean Android library to edit videos using FFmpeg.
   <img src="https://github.com/user-attachments/assets/582dfd25-e02c-4656-8ffa-cd6f74e93386" width="200"/>
   <img src="https://github.com/user-attachments/assets/a0653214-9115-4db6-ae71-e0cd8b26ea28" width="200"/>
   <img src="https://github.com/user-attachments/assets/571e6e15-dde7-4a61-986c-290eb61d736c" width="200"/>
+  <img src="https://github.com/user-attachments/assets/4d08719a-3b30-4486-9ab8-67a9b19d95e5" width="200"/>
 </p>
 
 ## Features
