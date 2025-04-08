@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/red_bacl_ground"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor"
+        android:fontFamily="@font/din_next_lt_w23_medium"
+        android:textSize="18sp"
+        android:text="@string/add_sound_btn_text"/>
+    <ImageView
+        android:id="@+id/image_handler"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/baseline_mic_none_24"/>
+    <LinearLayout
+        android:id="@+id/sound_line_tools"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <ProgressBar
+            android:id="@+id/progress_audio"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="visible"/>
+        <Button
+            android:id="@+id/playButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/play_btn_text" />
+
+        <Button
+            android:id="@+id/stopButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop_btn_text" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/add_sound_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#4CAF50"
+            android:text="@string/add_sound_btn_text"/>
+
+        <ImageView
+            android:id="@+id/delete_sound_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:contentDescription="delete sound"
+            android:focusable="true"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:src="@drawable/baseline_delete_forever_24"/>
+    </LinearLayout>
+</LinearLayout>

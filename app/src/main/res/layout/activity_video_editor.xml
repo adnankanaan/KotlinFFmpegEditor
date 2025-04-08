@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:keepScreenOn="true"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".videoeditor.VideoEditorActivity">
+
+    <!-- adding VideoView to the layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.webapp.kotlin_webapp_video_editer.videoeditor.DrawingViewEditer
+            android:id="@+id/drawingCanvas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/close_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Close"
+            android:src="@drawable/baseline_cancel_24"
+            android:focusable="true"
+            app:tint="@color/purple_100" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/video_download_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:visibility="gone"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="77dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="50dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_baseline_download_24"
+            android:contentDescription="Download options" />
+
+        <ProgressBar
+            android:id="@+id/zoom_video_pb"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:progressTint="#2196F3"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminate="true" />
+
+
+        <SeekBar
+            android:id="@+id/video_progress"
+            android:progressTint="@color/purple_100"
+            android:progressBackgroundTint="#B2C4D3"
+            android:thumbTint="@color/purple_100"
+            android:layout_marginBottom="8dp"
+            android:progress="0"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_tools_line"
+        android:visibility="invisible"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="8dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/gray_light_back"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/edit_video_fab"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:id="@+id/reset_btn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:layout_marginBottom="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Reset"
+            android:src="@drawable/baseline_autorenew_24"
+            android:focusable="true"
+            app:tint="@color/white" />
+        <ImageView
+            android:id="@+id/paint_btn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:layout_marginBottom="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Draw"
+            android:src="@drawable/baseline_draw_24"
+            android:focusable="true"
+            app:tint="@color/white" />
+        <ImageView
+            android:id="@+id/emoji_btn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:layout_marginBottom="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="emoji"
+            android:src="@drawable/baseline_sentiment_satisfied_24"
+            android:focusable="true"
+            app:tint="@color/white" />
+        <ImageView
+            android:id="@+id/text_btn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:layout_marginBottom="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="text"
+            android:src="@drawable/baseline_text_fields_24"
+            android:focusable="true"
+            app:tint="@color/white" />
+        <ImageView
+            android:id="@+id/sound_swap_btn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:layout_marginBottom="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Sound swap"
+            android:src="@drawable/baseline_mic_none_24"
+            android:focusable="true"
+            app:tint="@color/white" />
+        <ImageView
+            android:id="@+id/face_swap_btn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="face swap"
+            android:src="@drawable/baseline_face_retouching_natural_24"
+            android:focusable="true"
+            app:tint="@color/white" />
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/edit_video_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="bottom|end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="15dp"
+        app:srcCompat="@drawable/baseline_edit_24"
+        android:contentDescription="edit video" />
+</androidx.constraintlayout.widget.ConstraintLayout>

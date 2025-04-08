@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Kotlin-WebApp-Video-Editer</string>
+    <string name="app_api_url">https://samrt-loader.com/kydwon/api/</string>
+    <string name="select_face_title">Select a face</string>
+    <string name="add_text_title_text">Add text</string>
+    <string name="text_hint_text">Enter text</string>
+    <string name="pick_color_text">Pick Color</string>
+    <string name="delete_item_des_text">Deleting Download Will remove for ever from your phone , Cannot be restored !!</string>
+    <string name="close_text_button">Close</string>
+    <string name="save_text">Save</string>
+    <string name="close_button_text">Close</string>
+    <string name="stop_btn_text">Stop</string>
+    <string name="play_btn_text">Play</string>
+    <string name="add_sound_btn_text">Add sound</string>
+    <string name="loading_prossess_add_audio_text">Saving audio …</string>
+    <string name="pls_add_another_audio">The audio was not accepted for several reasons. Please try another audio.</string>
+    <string name="pls_add_audio">please add an audio</string>
+    <string name="add_audio_success">Saving audio successful, effect will bear after final video generated.</string>
+    <string name="loading_prossess_delete_audio_text">Deleting audio …</string>
+    <string name="delete_audio_success">Deleting audio successful .</string>
+    <string name="crop_text">Crop</string>
+    <string name="image_saved_successful">Image saved successful</string>
+    <string name="pls_add_photo">please add an image</string>
+    <string name="pls_add_video">please add a video</string>
+    <string name="loading_prossess_add_face_swap_image_text">Face tracking and adding image ,May take a while depends on video duration …</string>
+    <string name="add_face_swap_options_help_title">Face Swap</string>
+    <string name="add_back_ground_btn_text">add image</string>
+    <string name="loading_video_text">Loading Video …</string>
+    <string name="pick_pint_color_text">Pick paint color</string>
+    <string name="paint_title_text">Paint options</string>
+    <string name="select_emoji_title">Select an Emoji</string>
+    <string name="loading_prossess_editer_video_text">Processioning video , May take a while depends on video duration …</string>
+    <string name="video_saved_with_edits_text">Video saved with edits.</string>
+    <string name="video_not_supported">Video not Supported</string>
+
+</resources>
