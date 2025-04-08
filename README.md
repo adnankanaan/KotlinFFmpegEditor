@@ -45,7 +45,7 @@ just we need to pass the selected videoUri by user to the editer activty , as th
 var videoUri = videoFile.absolutePath // for example existing local video file
 
 val intent = Intent(context, VideoEditorActivity::class.java)
-intent.putExtra("videoUri", videoUri) // pass the videoUri here
+intent.putExtra("videoUri", videoUri.toString()) // pass the videoUri here
 startActivity(intent)
 ```
 ## Optinal Customize
