@@ -9,6 +9,8 @@ A simple and clean Android library to edit videos using FFmpeg.
   <img src="https://github.com/user-attachments/assets/4d08719a-3b30-4486-9ab8-67a9b19d95e5" width="200"/>
 </p>
 
+try out the orgenal ver of video editer on google play at : https://play.google.com/store/apps/details?id=com.smart.loader
+
 ## Features
 - Free draw on videos with color picker
 - imoji overlay
