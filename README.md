@@ -47,7 +47,8 @@ val intent = Intent(context, VideoEditorActivity::class.java)
 intent.putExtra("videoUri", videoUri) // pass the videoUri here
 startActivity(intent)
 
-## Customize
+## Optinal Customize
+befor you intent VideoEditorActivity you can Customize the defult text and color and the current lang by adding this line :
 
 VideoEditorFragment.textFinalSet = "Hello!"
 VideoEditorFragment.textFinalColorSet = "#FF0000"
