@@ -56,6 +56,16 @@ VideoEditorFragment.textFinalSet = "Hello!"
 VideoEditorFragment.textFinalColorSet = "#FF0000"
 VideoEditorFragment.currentLang = "ar" // "ar" for arabic or "en" for english
 
+## Permissions Needed (for host app)
+
+Make sure to add the following permissions in your app's `AndroidManifest.xml`:
+
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+
 ## Notes
 * the editor button visible only when input video less than 5 minutes > only shorts video.
 * This is first trial and colud need more improvments .
