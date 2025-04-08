@@ -50,11 +50,11 @@ intent.putExtra("videoUri", videoUri) // pass the videoUri here
 startActivity(intent)
 
 ## Optinal Customize
-befor you intent VideoEditorActivity you can Customize the defult text and color and the current lang by adding this line :
+befor you intent VideoEditorActivity you can Customize the default text, color and the current lang by adding this line :
 
 VideoEditorFragment.textFinalSet = "Hello!"
 VideoEditorFragment.textFinalColorSet = "#FF0000"
-VideoEditorFragment.currentLang = "ar"
+VideoEditorFragment.currentLang = "ar" // "ar" for arabic or "en" for english
 
 ## Notes
 * the editor button visible only when input video less than 5 minutes > only shorts video.
