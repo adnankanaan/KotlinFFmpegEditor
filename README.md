@@ -3,9 +3,10 @@
 A simple and clean Android library to edit videos using FFmpeg.
 
 ## Features
-- Trim videos
+- Free draw on videos
+- imoji overlay
 - Add text overlay
-- Face swap
+- Face swap detection 
 - Easy to integrate
 
 ## 📦 Installation
