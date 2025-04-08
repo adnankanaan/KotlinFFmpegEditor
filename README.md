@@ -41,6 +41,8 @@ dependencies {
 ## Usage
 just we need to pass the selected videoUri by user to the editer activty , as this :
 
+var videoUri = file.absolutePath // for example
+
 val intent = Intent(context, VideoEditorActivity::class.java)
 intent.putExtra("videoUri", videoUri) // pass the videoUri here
 startActivity(intent)
