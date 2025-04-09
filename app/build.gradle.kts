@@ -1,20 +1,25 @@
 plugins {
-    alias(libs.plugins.android.application)
+    id("com.android.library")
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.devtools)
+    id("maven-publish")
 }
 
 android {
     namespace = "com.webapp.kotlin_webapp_video_editer"
     compileSdk = 35
 
+    compileSdk = 34
     defaultConfig {
         minSdk = 24
-        targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+    }
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    lint {
+        targetSdk = 34
+    }
+
+    testOptions {
+        targetSdk = 34
     }
 
     buildTypes {
@@ -30,6 +35,7 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
@@ -54,4 +60,17 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+}
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+
+                groupId = "com.github.adnankanaan"
+                artifactId = "KotlinFFmpegEditor"
+                version = "1.0.1"
+            }
+        }
+    }
 }
