@@ -42,6 +42,12 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()  // optional, but recommended
+            withJavadocJar()  // optional, if you generate javadocs
+        }
+    }
 }
 
 dependencies {
