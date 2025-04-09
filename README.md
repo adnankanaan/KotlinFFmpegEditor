@@ -88,4 +88,6 @@ Make sure to add the following permissions in your app's `AndroidManifest.xml`:
 ## Notes
 * the editor button visible only when input video less than 5 minutes > only shorts video.
 * This is first trial and may need more improvements .
+* minSdk 24
+* targetSdk 35
 
