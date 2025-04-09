@@ -24,7 +24,7 @@ A simple and clean Android library to edit videos using FFmpeg.
 
 Add JitPack to your root `settings.gradle` or `build.gradle`:
 
-```kotlin
+```groovy
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -36,9 +36,15 @@ dependencyResolutionManagement {
 
 ```
 Then add the lib to your module's build.gradle:
-```kotlin
+```groovy
 dependencies {
     implementation 'com.github.adnankanaan:KotlinFFmpegEditor:v1.0.9'
+}
+
+or
+
+dependencies {
+    implementation 'com.github.adnankanaan:KotlinFFmpegEditor:1.0.9'
 }
 ```
 ## Usage
