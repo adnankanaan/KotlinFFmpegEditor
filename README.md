@@ -36,16 +36,16 @@ dependencyResolutionManagement {
 Then add the lib to your module's build.gradle:
 ```kotlin
 dependencies {
-    implementation 'com.github.adnankanaan:KotlinFFmpegEditor:1.0.5'
+    implementation 'com.github.adnankanaan:KotlinFFmpegEditor:1.0.7'
 }
 ```
 ## Usage
 just we need to pass the selected videoUri by user to the editer activty , as this :
 ```
-var videoUri = videoFile.absolutePath // for example existing local video file
+var videoPath = videoFile.absolutePath // for example existing local video file
 
 val intent = Intent(context, VideoEditorActivity::class.java)
-intent.putExtra("videoUri", videoUri.toString()) // pass the videoUri here
+intent.putExtra("videoPath", videoPath.toString()) // pass the videoUri here
 startActivity(intent)
 ```
 ## Optinal Customize
@@ -64,6 +64,21 @@ Make sure to add the following permissions in your app's `AndroidManifest.xml`:
 <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+
+// inside application block add this declear
+<application .......
+        <activity
+            android:name="com.webapp.kotlin_webapp_video_editer.videoeditor.VideoEditorActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+</application>
 ```
 ## Notes
 * the editor button visible only when input video less than 5 minutes > only shorts video.
