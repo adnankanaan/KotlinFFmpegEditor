@@ -9,6 +9,8 @@ A simple and clean Android library to edit videos using FFmpeg.
   <img src="https://github.com/user-attachments/assets/4d08719a-3b30-4486-9ab8-67a9b19d95e5" width="200"/>
 </p>
 
+* Try out the orgenal ver of video editer activity on google play at : https://play.google.com/store/apps/details?id=com.smart.loader
+
 ## Features
 - Free draw on videos with color picker
 - imoji overlay
@@ -16,12 +18,11 @@ A simple and clean Android library to edit videos using FFmpeg.
 - Face swap detection
 - Draggable & resize responsive canvas
 - Easy to integrate one line to video start editer activty
-
 ## 📦 Installation
 
 Add JitPack to your root `settings.gradle` or `build.gradle`:
 
-```groovy
+```kotlin
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -31,27 +32,40 @@ dependencyResolutionManagement {
     }
 }
 
-
-Then add this to your module's build.gradle:
-
+```
+Then add the lib to your module's build.gradle:
+```kotlin
 dependencies {
     implementation 'com.github.adnankanaan:KotlinFFmpegEditor:1.0.0'
 }
-
+```
 ## Usage
 just we need to pass the selected videoUri by user to the editer activty , as this :
+```
+var videoUri = videoFile.absolutePath // for example existing local video file
 
 val intent = Intent(context, VideoEditorActivity::class.java)
-intent.putExtra("videoUri", videoUri) // pass the videoUri here
+intent.putExtra("videoUri", videoUri.toString()) // pass the videoUri here
 startActivity(intent)
-
-## Customize
-
+```
+## Optinal Customize
+befor you intent VideoEditorActivity you can Customize the default text, color and the current lang by adding this line :
+```kotlin
 VideoEditorFragment.textFinalSet = "Hello!"
 VideoEditorFragment.textFinalColorSet = "#FF0000"
-VideoEditorFragment.currentLang = "ar"
+VideoEditorFragment.currentLang = "ar" // "ar" for arabic or "en" for english
+```
+## Permissions Needed (for host app)
 
+Make sure to add the following permissions in your app's `AndroidManifest.xml`:
+
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+```
 ## Notes
 * the editor button visible only when input video less than 5 minutes > only shorts video.
-* This is first trial and colud need more improvments .
+* This is first trial and may need more improvements .
 
