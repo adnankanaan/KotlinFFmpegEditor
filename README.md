@@ -65,8 +65,10 @@ Make sure to add the following permissions in your app's `AndroidManifest.xml`:
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
 
-// inside application block add the editer activity declear
-<application .......
+// inside your application block add the editer activity declear
+<application ......
+      .......
+
         <activity
             android:name="com.webapp.kotlin_webapp_video_editer.videoeditor.VideoEditorActivity"
             android:parentActivityName=".MainActivity"
@@ -78,6 +80,7 @@ Make sure to add the following permissions in your app's `AndroidManifest.xml`:
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
         </activity>
+   .........
 </application>
 ```
 ## Notes
