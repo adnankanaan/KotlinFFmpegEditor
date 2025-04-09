@@ -57,7 +57,7 @@ class EmojiDialogFragment : DialogFragment() {
         CoroutineScope(Dispatchers.IO).launch {
             val client = OkHttpClient()
             val request = Request.Builder()
-                .url("${getString(R.string.app_api_url)}get-emoji-list")
+                .url("${getString(R.string.editer_kotlin_lib_ss8_api_url)}get-emoji-list")
                 .build()
 
             try {
