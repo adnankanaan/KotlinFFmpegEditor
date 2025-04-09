@@ -69,7 +69,7 @@ afterEvaluate {
 
                 groupId = "com.github.adnankanaan"
                 artifactId = "KotlinFFmpegEditor"
-                version = "1.0.1"
+                version = "1.0.3"
             }
         }
     }
