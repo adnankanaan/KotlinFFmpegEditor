@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/adnankanaan/KotlinFFmpegEditor.svg)](https://jitpack.io/#adnankanaan/KotlinFFmpegEditor)
+
 # Kotlin Short Video Editor Library 🎬
 
 A simple and clean Android library to edit videos using FFmpeg.
