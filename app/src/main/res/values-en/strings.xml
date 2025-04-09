@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Kotlin-WebApp-Video-Editer</string>
     <string name="select_face_title">Select a face</string>
     <string name="add_text_title_text">Add text</string>
     <string name="text_hint_text">Enter text</string>

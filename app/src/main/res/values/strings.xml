@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Kotlin-WebApp-Video-Editer</string>
     <string name="app_api_url">https://samrt-loader.com/kydwon/api/</string>
     <string name="select_face_title">Select a face</string>
     <string name="add_text_title_text">Add text</string>
