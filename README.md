@@ -38,7 +38,7 @@ dependencyResolutionManagement {
 Then add the lib to your module's build.gradle:
 ```kotlin
 dependencies {
-    implementation 'com.github.adnankanaan:KotlinFFmpegEditor:1.0.9'
+    implementation 'com.github.adnankanaan:KotlinFFmpegEditor:v1.0.9'
 }
 ```
 ## Usage
