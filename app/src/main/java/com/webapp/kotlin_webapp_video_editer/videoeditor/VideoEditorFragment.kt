@@ -57,7 +57,7 @@ class VideoEditorFragment : Fragment() ,View.OnClickListener , SeekBar.OnSeekBar
 
     private var _binding: ActivityVideoEditorBinding? = null
     private val binding get() = _binding!!
-    private var videoPath: Uri? = null
+    private var videoPath: String? = null
 
     private lateinit var videoPreview: VideoView
     private lateinit var videoProgress: ProgressBar
@@ -154,11 +154,7 @@ class VideoEditorFragment : Fragment() ,View.OnClickListener , SeekBar.OnSeekBar
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        videoPath = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            requireActivity().intent.getParcelableExtra("videoUri", Uri::class.java)
-        } else {
-            requireActivity().intent.getParcelableExtra("videoUri")
-        }
+        videoPath = requireActivity().intent.getStringExtra("videoPath")
 
         if (videoPath == null) {
             Toast.makeText(requireContext(), "No video selected", Toast.LENGTH_SHORT).show()
