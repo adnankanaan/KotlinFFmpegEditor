@@ -41,7 +41,7 @@ dependencies {
     implementation 'com.github.adnankanaan:KotlinFFmpegEditor:v1.0.9'
 }
 
-or
+//or
 
 dependencies {
     implementation 'com.github.adnankanaan:KotlinFFmpegEditor:1.0.9'
@@ -49,7 +49,7 @@ dependencies {
 ```
 ## Usage
 just we need to pass the selected videoUri by user to the editer activty , as this :
-```
+```kotlin
 var videoPath = videoFile.absolutePath // for example existing local video file
 
 val intent = Intent(context, VideoEditorActivity::class.java)
