@@ -53,7 +53,7 @@ dependencies {
 }
 ```
 ## Usage
-just we need to pass the selected video file path by user to the editer activty , as this :
+just we need to pass the selected video file path by user to the editer activity :
 ```kotlin
 var videoPath = videoFile.absolutePath // for example existing local video file absolutePath
 
