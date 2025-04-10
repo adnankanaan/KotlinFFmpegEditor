@@ -48,9 +48,9 @@ dependencies {
 }
 ```
 ## Usage
-just we need to pass the selected videoUri by user to the editer activty , as this :
+just we need to pass the selected video file path by user to the editer activty , as this :
 ```kotlin
-var videoPath = videoFile.absolutePath // for example existing local video file
+var videoPath = videoFile.absolutePath // for example existing local video file absolutePath
 
 val intent = Intent(context, VideoEditorActivity::class.java)
 intent.putExtra("videoPath", videoPath.toString()) // pass the video absolutePath here
