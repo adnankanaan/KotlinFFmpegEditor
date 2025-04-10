@@ -22,6 +22,7 @@ A simple and clean Android library to play & edit shorts videos using FFmpeg.
 - Add text overlay with color picker
 - Face swap detection
 - Draggable & resize responsive canvas
+- Trim video (Soon in next release 1.1.0)
 - Easy to integrate with one line
 ## 📦 Installation
 
