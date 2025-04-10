@@ -14,6 +14,8 @@ A simple and clean Android library to edit shorts videos using FFmpeg.
 * Try out the original version of video editor activity on google play at : https://play.google.com/store/apps/details?id=com.smart.loader
 
 ## Features
+- Up to 5 min video length for generate process
+- High quality generated edit video
 - Free draw on videos with color picker
 - imoji overlay
 - Add text overlay with color picker
