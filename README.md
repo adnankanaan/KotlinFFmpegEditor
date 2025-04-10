@@ -14,7 +14,7 @@ A simple and clean Android library to play & edit shorts videos using FFmpeg.
 * Check out the original version of video player & editor activity on google play at  : https://play.google.com/store/apps/details?id=com.smart.loader
 
 ## Features
-- Smoth video player
+- Smoth & responsive video player
 - Up to 5 min video length for generate process
 - High quality generated edit video
 - Free draw on videos with color picker
