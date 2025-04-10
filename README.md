@@ -21,7 +21,7 @@ A simple and clean Android library to edit shorts videos using FFmpeg.
 - Add text overlay with color picker
 - Face swap detection
 - Draggable & resize responsive canvas
-- Easy to integrate one line to video start editer activty
+- Easy to integrate with one line
 ## 📦 Installation
 
 Add JitPack to your root `settings.gradle` or `build.gradle`:
