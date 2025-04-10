@@ -101,7 +101,7 @@ Make sure to add the following permissions & Activity declare tag in your app's 
 </application>
 ```
 ## Notes
-* the editor button visible only when input video less than 5 minutes > only shorts video.
+* the editor button visible only when the selcted input video less than 5 minutes > only shorts video.
 * This is first trial and may need more improvements .
 * minSdk 24
 * targetSdk 35
