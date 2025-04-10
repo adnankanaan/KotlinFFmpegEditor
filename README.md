@@ -2,7 +2,7 @@
 
 # Kotlin Short Video Editor Library 🎬
 
-A simple and clean Android library to edit videos using FFmpeg.
+A simple and clean Android library to edit shorts videos using FFmpeg.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/582dfd25-e02c-4656-8ffa-cd6f74e93386" width="200"/>
