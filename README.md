@@ -78,9 +78,10 @@ Make sure to add the following permissions & Activity declare in your app's `And
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
 
-//inside your application block add the video editor activity declare
+//inside your application block add the video editor activity declare tag
 <application ......
       .......>
+        // Start-activity-tag >>>
 
         <activity
             android:name="com.webapp.kotlin_webapp_video_editer.videoeditor.VideoEditorActivity"
@@ -93,6 +94,8 @@ Make sure to add the following permissions & Activity declare in your app's `And
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
             </intent-filter>
         </activity>
+
+        // End-activity-tag <<<
    .........
 </application>
 ```
