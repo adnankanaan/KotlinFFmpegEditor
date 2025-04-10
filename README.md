@@ -78,7 +78,7 @@ Make sure to add the following permissions & Activity declare in your app's `And
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
 
-//inside your application block add the editor activity declare
+//inside your application block add the video editor activity declare
 <application ......
       .......>
 
