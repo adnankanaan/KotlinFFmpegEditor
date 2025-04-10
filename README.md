@@ -79,7 +79,7 @@ Make sure to add the following permissions & Activity declare in your app's `And
 
 //inside your application block add the editor activity declare
 <application ......
-      .......
+      .......>
 
         <activity
             android:name="com.webapp.kotlin_webapp_video_editer.videoeditor.VideoEditorActivity"
