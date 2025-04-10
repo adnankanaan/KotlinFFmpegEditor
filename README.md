@@ -65,7 +65,7 @@ VideoEditorFragment.textFinalSet = "Hello!"
 VideoEditorFragment.textFinalColorSet = "#FF0000"
 VideoEditorFragment.currentLang = "ar" // "ar" for arabic or "en" for english
 ```
-## Permissions Needed (for host app)
+## Permissions & Declare Needed (for host app)
 
 Make sure to add the following permissions in your app's `AndroidManifest.xml`:
 
@@ -75,7 +75,7 @@ Make sure to add the following permissions in your app's `AndroidManifest.xml`:
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
 
-// inside your application block add the editer activity declear
+//inside your application block add the editor activity declare
 <application ......
       .......
 
