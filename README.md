@@ -102,7 +102,7 @@ Make sure to add the following permissions & Activity declare tag in your app's 
 ```
 ## Notes
 * the editor button visible only when the selected input video less than 5 minutes > Editing video only for short videos.
-* This is first trial and may need more improvements .
+* This is first release version and may need more improvements .
 * minSdk 24
 * targetSdk 35
 
