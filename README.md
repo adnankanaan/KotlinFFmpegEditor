@@ -68,7 +68,7 @@ VideoEditorFragment.textFinalSet = "Hello!"
 VideoEditorFragment.textFinalColorSet = "#FF0000"
 VideoEditorFragment.currentLang = "ar" // "ar" for arabic or "en" for english
 ```
-## Permissions & Declare Needed (for host app)
+## Permissions & Activity declare Needed (for host app)
 
 Make sure to add the following permissions & Activity declare tag in your app's `AndroidManifest.xml`:
 
