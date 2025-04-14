@@ -66,7 +66,7 @@ befor you intent VideoEditorActivity you can Customize the default text, color a
 ```kotlin
 VideoEditorFragment.textFinalSet = "Hello!" // default text input
 VideoEditorFragment.textFinalColorSet = "#FF0000" // default text color
-VideoEditorFragment.currentLang = "ar" // "ar" for arabic or "en" for english
+VideoEditorFragment.currentLang = "ar" // "ar" for arabic or "en" for english activity layout
 ```
 ## Permissions & Activity declare Needed (for host app)
 
