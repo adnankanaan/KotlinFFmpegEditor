@@ -64,8 +64,8 @@ startActivity(intent)
 ## Optinal Customize
 befor you intent VideoEditorActivity you can Customize the default text, color and the current lang by adding this line :
 ```kotlin
-VideoEditorFragment.textFinalSet = "Hello!"
-VideoEditorFragment.textFinalColorSet = "#FF0000"
+VideoEditorFragment.textFinalSet = "Hello!" // default text input
+VideoEditorFragment.textFinalColorSet = "#FF0000" // default text color
 VideoEditorFragment.currentLang = "ar" // "ar" for arabic or "en" for english
 ```
 ## Permissions & Activity declare Needed (for host app)
@@ -86,7 +86,7 @@ Make sure to add the following permissions & Activity declare tag in your app's 
 
         <activity
             android:name="com.webapp.kotlin_webapp_video_editer.videoeditor.VideoEditorActivity"
-            android:parentActivityName=".MainActivity" // Change to your main activity if it is not MainActivity or any previous parent activity logic
+            android:parentActivityName=".MainActivity" // Change to your main activity if it is not MainActivity or any previous parent activity logic, Or you can remove it safly
             android:screenOrientation="portrait"
             android:exported="true"
             tools:ignore="LockedOrientationActivity">
