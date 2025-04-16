@@ -55,8 +55,10 @@ dependencies {
 ## Usage
 just we need to pass the selected video file path by user to the editer activity :
 ```kotlin
+// Current video file path
 var videoPath = videoFile.absolutePath // for example existing local video file absolutePath
 
+// Start video editer activity
 Intent(requireContext(), VideoEditorActivity::class.java).apply {
    putExtra("videoPath", videoPath.toString()) // pass the video absolutePath here
    startActivity(this)
