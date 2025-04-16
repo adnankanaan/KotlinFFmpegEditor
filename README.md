@@ -85,7 +85,7 @@ Make sure to add the following permissions & Activity declare tag in your app's 
 // inside your application block add the required video editor activity declarment tag
 <application ......
       .......>
-        // Start-activity-tag >>>
+      <!-- Start-activity-tag -->
 
         <activity
             android:name="com.webapp.kotlin_webapp_video_editer.videoeditor.VideoEditorActivity"
@@ -99,7 +99,7 @@ Make sure to add the following permissions & Activity declare tag in your app's 
             </intent-filter>
         </activity>
 
-        // End-activity-tag <<<
+      <!-- End-activity-tag -->
    .........
 </application>
 ```
