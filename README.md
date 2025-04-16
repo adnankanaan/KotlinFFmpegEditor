@@ -76,13 +76,13 @@ VideoEditorFragment.currentLang = "ar" // "ar" for arabic or "en" for english ac
 Make sure to add the following permissions & Activity declare tag in your app's `AndroidManifest.xml`:
 
 ```xml
-// Require permissions tag
+<!-- Require permissions tag -->
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
 
-// inside your application block add the required video editor activity declarment tag
+<!-- inside your application block add the required video editor activity declarment tag -->
 <application ......
       .......>
       <!-- Start-activity-tag -->
