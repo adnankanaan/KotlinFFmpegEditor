@@ -57,9 +57,10 @@ just we need to pass the selected video file path by user to the editer activity
 ```kotlin
 var videoPath = videoFile.absolutePath // for example existing local video file absolutePath
 
-val intent = Intent(context, VideoEditorActivity::class.java)
-intent.putExtra("videoPath", videoPath.toString()) // pass the video absolutePath here
-startActivity(intent)
+Intent(requireContext(), VideoEditorActivity::class.java).apply {
+   putExtra("videoPath", videoPath.toString()) // pass the video absolutePath here
+   startActivity(this)
+}
 ```
 ## Optinal Customize
 befor you intent VideoEditorActivity you can Customize the default text, color and the current lang by adding this line :
