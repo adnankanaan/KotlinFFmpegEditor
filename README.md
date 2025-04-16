@@ -89,7 +89,6 @@ Make sure to add the following permissions & Activity declare tag in your app's 
 
         <activity
             android:name="com.webapp.kotlin_webapp_video_editer.videoeditor.VideoEditorActivity"
-            android:parentActivityName=".MainActivity" // Change to your main activity if it is not MainActivity or any previous parent activity logic, Or you can remove it safly
             android:screenOrientation="portrait"
             android:exported="true"
             tools:ignore="LockedOrientationActivity">
